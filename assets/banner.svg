@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d1b2a" />
+      <stop offset="100%" stop-color="#1b263b" />
+    </linearGradient>
+
+    <!-- Mesh Glow Gradients -->
+    <radialGradient id="meshGlowCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#00f2fe" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="meshGlowPurple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9d4edd" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#9d4edd" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Title Gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#9d4edd" />
+    </linearGradient>
+
+    <!-- Badge/Pill Gradient -->
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.12)" />
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.04)" />
+    </linearGradient>
+
+    <!-- Card / Flow Gradients -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.8" />
+    </linearGradient>
+
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    /* Pulse and flow dynamic keyframes */
+    @keyframes pulseCyan {
+      0%, 100% { transform: scale(1); opacity: 0.25; }
+      50% { transform: scale(1.15); opacity: 0.55; }
+    }
+    @keyframes pulsePurple {
+      0%, 100% { transform: scale(1.1); opacity: 0.35; }
+      50% { transform: scale(0.95); opacity: 0.6; }
+    }
+    @keyframes flowOffset {
+      from { stroke-dashoffset: 80; }
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes orbitNode {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0px); }
+    }
+    @keyframes floatPill {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .mesh-glow-cyan {
+      transform-origin: 200px 100px;
+      animation: pulseCyan 7s ease-in-out infinite;
+    }
+    .mesh-glow-purple {
+      transform-origin: 1000px 240px;
+      animation: pulsePurple 9s ease-in-out infinite;
+    }
+    .dynamic-flow-line {
+      stroke-dasharray: 8, 8;
+      animation: flowOffset 3s linear infinite;
+    }
+    .floating-card-1 {
+      animation: orbitNode 5s ease-in-out infinite;
+    }
+    .floating-card-2 {
+      animation: orbitNode 6.5s ease-in-out infinite reverse;
+    }
+    .floating-card-3 {
+      animation: orbitNode 5.5s ease-in-out infinite;
+    }
+    .dynamic-pill-1 {
+      animation: floatPill 4s ease-in-out infinite;
+    }
+    .dynamic-pill-2 {
+      animation: floatPill 4.5s ease-in-out infinite reverse;
+    }
+    .dynamic-pill-3 {
+      animation: floatPill 5s ease-in-out infinite 0.5s;
+    }
+    .dynamic-pill-4 {
+      animation: floatPill 4.2s ease-in-out infinite 1s;
+    }
+
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    .sub-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+    }
+  </style>
+
+  <!-- Deep Tech Canvas Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Background Animated Mesh Glows -->
+  <circle cx="220" cy="110" r="240" fill="url(#meshGlowCyan)" class="mesh-glow-cyan" />
+  <circle cx="980" cy="220" r="260" fill="url(#meshGlowPurple)" class="mesh-glow-purple" />
+
+  <!-- Geometric Grid Accent (Subtle Architectural Lines) -->
+  <g stroke="rgba(255, 255, 255, 0.04)" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="270" x2="1200" y2="270" />
+    <line x1="150" y1="0" x2="150" y2="360" />
+    <line x1="450" y1="0" x2="450" y2="360" />
+    <line x1="750" y1="0" x2="750" y2="360" />
+    <line x1="1050" y1="0" x2="1050" y2="360" />
+  </g>
+
+  <!-- Animated Dynamic Service Mesh Data Flow Lines -->
+  <g fill="none" stroke-width="2">
+    <!-- Connecting flow 1 -->
+    <path d="M 120 70 C 240 30, 320 120, 480 80" stroke="#00f2fe" stroke-opacity="0.4" class="dynamic-flow-line" />
+    <!-- Connecting flow 2 -->
+    <path d="M 720 280 C 850 320, 950 250, 1100 290" stroke="#9d4edd" stroke-opacity="0.4" class="dynamic-flow-line" />
+    <!-- Top arc flow -->
+    <path d="M 280 40 Q 600 -10 920 40" stroke="#4facfe" stroke-opacity="0.3" class="dynamic-flow-line" />
+  </g>
+
+  <!-- Animated Topology Floating Nodes/Cards in Background (Layered cleanly away from center text) -->
+  <g filter="url(#cardShadow)">
+    <!-- Sidecar Proxy Micro-Card (Left) -->
+    <g class="floating-card-1" transform="translate(60, 130)">
+      <rect width="115" height="48" rx="8" fill="url(#cardGrad)" stroke="rgba(0, 242, 254, 0.3)" stroke-width="1.2" />
+      <circle cx="20" cy="24" r="5" fill="#00f2fe" filter="url(#glowEffect)" />
+      <text x="34" y="22" fill="#e2e8f0" font-size="11" font-weight="700" font-family="sans-serif">ENVOY / L7</text>
+      <text x="34" y="36" fill="#94a3b8" font-size="9" font-family="sans-serif">Sidecar Proxy</text>
+    </g>
+
+    <!-- Distributed State / Consensus Micro-Card (Left Lower) -->
+    <g class="floating-card-2" transform="translate(80, 220)">
+      <rect width="115" height="48" rx="8" fill="url(#cardGrad)" stroke="rgba(79, 172, 254, 0.3)" stroke-width="1.2" />
+      <circle cx="20" cy="24" r="5" fill="#4facfe" filter="url(#glowEffect)" />
+      <text x="34" y="22" fill="#e2e8f0" font-size="11" font-weight="700" font-family="sans-serif">ETCD / RAFT</text>
+      <text x="34" y="36" fill="#94a3b8" font-size="9" font-family="sans-serif">State &amp; Locks</text>
+    </g>
+
+    <!-- eBPF Mesh Micro-Card (Right) -->
+    <g class="floating-card-3" transform="translate(1025, 130)">
+      <rect width="115" height="48" rx="8" fill="url(#cardGrad)" stroke="rgba(157, 78, 221, 0.3)" stroke-width="1.2" />
+      <circle cx="20" cy="24" r="5" fill="#9d4edd" filter="url(#glowEffect)" />
+      <text x="34" y="22" fill="#e2e8f0" font-size="11" font-weight="700" font-family="sans-serif">CILIUM eBPF</text>
+      <text x="34" y="36" fill="#94a3b8" font-size="9" font-family="sans-serif">Kernel Mesh</text>
+    </g>
+
+    <!-- Workflow Execution Micro-Card (Right Lower) -->
+    <g class="floating-card-1" transform="translate(1005, 220)">
+      <rect width="125" height="48" rx="8" fill="url(#cardGrad)" stroke="rgba(255, 183, 3, 0.3)" stroke-width="1.2" />
+      <circle cx="20" cy="24" r="5" fill="#ffb703" filter="url(#glowEffect)" />
+      <text x="34" y="22" fill="#e2e8f0" font-size="11" font-weight="700" font-family="sans-serif">TEMPORAL</text>
+      <text x="34" y="36" fill="#94a3b8" font-size="9" font-family="sans-serif">Durable Execution</text>
+    </g>
+  </g>
+
+  <!-- ================= FOREGROUND HERO CONTENT (UNOBSTRUCTED) ================= -->
+
+  <!-- Top Category Tag -->
+  <g transform="translate(600, 52)">
+    <rect x="-140" y="-14" width="280" height="28" rx="14" fill="url(#pillGrad)" stroke="rgba(0, 242, 254, 0.3)" stroke-width="1" />
+    <text text-anchor="middle" y="4" fill="#00f2fe" font-size="11" font-weight="700" font-family="sans-serif" letter-spacing="1.5">
+      CLOUD-NATIVE RUNTIME ECOSYSTEM
+    </text>
+  </g>
+
+  <!-- Main Hero Title (Guaranteed Sharp Foreground) -->
+  <text class="title-text" text-anchor="middle" x="600" y="128" fill="url(#titleGrad)" font-size="40">
+    Awesome Distributed Application Runtimes
+  </text>
+
+  <!-- Clear Subtitle -->
+  <text class="sub-text" text-anchor="middle" x="600" y="168" fill="#e2e8f0" font-size="17" opacity="0.95">
+    Curated Service Meshes, Sidecar Proxies &amp; Distributed Building Blocks
+  </text>
+  <text class="sub-text" text-anchor="middle" x="600" y="196" fill="#94a3b8" font-size="13" opacity="0.85">
+    Featuring Dapr • Istio • Cilium • Linkerd • Envoy • Temporal • etcd • Consul
+  </text>
+
+  <!-- Dynamic Foreground Capability Floating Badges/Pills -->
+  <g transform="translate(600, 255)">
+    <!-- Pill 1: Service Mesh -->
+    <g class="dynamic-pill-1" transform="translate(-330, 0)">
+      <rect x="-70" y="-16" width="140" height="32" rx="16" fill="rgba(15, 23, 42, 0.85)" stroke="#00f2fe" stroke-width="1.2" filter="url(#cardShadow)" />
+      <text text-anchor="middle" y="5" fill="#38bdf8" font-size="12" font-weight="600" font-family="sans-serif">⚡ Service Mesh</text>
+    </g>
+
+    <!-- Pill 2: Distributed Building Blocks -->
+    <g class="dynamic-pill-2" transform="translate(-110, 0)">
+      <rect x="-95" y="-16" width="190" height="32" rx="16" fill="rgba(15, 23, 42, 0.85)" stroke="#818cf8" stroke-width="1.2" filter="url(#cardShadow)" />
+      <text text-anchor="middle" y="5" fill="#a5b4fc" font-size="12" font-weight="600" font-family="sans-serif">🧩 Building Blocks (APIs)</text>
+    </g>
+
+    <!-- Pill 3: Sidecar & Ambient Proxies -->
+    <g class="dynamic-pill-3" transform="translate(110, 0)">
+      <rect x="-85" y="-16" width="170" height="32" rx="16" fill="rgba(15, 23, 42, 0.85)" stroke="#c084fc" stroke-width="1.2" filter="url(#cardShadow)" />
+      <text text-anchor="middle" y="5" fill="#e879f9" font-size="12" font-weight="600" font-family="sans-serif">🛡️ Sidecar &amp; Ambient</text>
+    </g>
+
+    <!-- Pill 4: Durable Orchestration -->
+    <g class="dynamic-pill-4" transform="translate(320, 0)">
+      <rect x="-80" y="-16" width="160" height="32" rx="16" fill="rgba(15, 23, 42, 0.85)" stroke="#4ade80" stroke-width="1.2" filter="url(#cardShadow)" />
+      <text text-anchor="middle" y="5" fill="#4ade80" font-size="12" font-weight="600" font-family="sans-serif">🔄 Durable Workflows</text>
+    </g>
+  </g>
+
+  <!-- Bottom Interactive Status Indicator -->
+  <g transform="translate(600, 320)">
+    <circle cx="-135" cy="0" r="4" fill="#22c55e">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text text-anchor="middle" x="0" y="4" fill="#64748b" font-size="11" font-weight="500" font-family="sans-serif">
+      Multi-Cloud • Zero-Trust Security • Language-Agnostic Microservices
+    </text>
+  </g>
+</svg>
