@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Distributed-Application-Runtimes/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Distributed-Application-Runtimes?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Distributed-Application-Runtimes/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Distributed-Application-Runtimes?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Distributed-Application-Runtimes/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Distributed-Application-Runtimes?style=social" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Distributed-Application-Runtimes/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License: MIT" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -62,74 +62,74 @@ Below is a curated comparison of enterprise SaaS and managed service mesh platfo
 
 ## 🚀 Open-Source GitHub Projects
 
-The leading open-source distributed runtimes, service meshes, and sidecar proxies, sorted by **GitHub Stars** (descending):
+The leading open-source distributed runtimes, service meshes, and sidecar proxies, sorted by **GitHub_Stars** (descending):
 
-- **etcd** [![GitHub stars](https://img.shields.io/github/stars/etcd-io/etcd?style=social&color=white)](https://github.com/etcd-io/etcd/stargazers)  
+- **etcd** [![GitHub_Stars](https://img.shields.io/github/stars/etcd-io/etcd?style=social&color=white)](https://github.com/etcd-io/etcd/stargazers)  
   📦 **Distributed reliable key-value store for the most critical data of a distributed system** (Apache-2.0).  
   **The consensus and state backbone** of Kubernetes and cloud-native infrastructure. Provides strongly consistent, Raft-based distributed coordination, distributed locking, service registration, and watch mechanisms.  
   *Best for*: foundational coordination, leader election, and resilient distributed state storage.
 
-- **gRPC** [![GitHub stars](https://img.shields.io/github/stars/grpc/grpc?style=social&color=white)](https://github.com/grpc/grpc/stargazers)  
+- **gRPC** [![GitHub_Stars](https://img.shields.io/github/stars/grpc/grpc?style=social&color=white)](https://github.com/grpc/grpc/stargazers)  
   ⚡ **High-performance, open source universal RPC framework** (Apache-2.0).  
   **The inter-service communication backbone** across cloud-native architectures. Offers pluggable support for load balancing, tracing, health checking, and authentication over HTTP/2 transport with Protocol Buffers schema contracts.  
   *Best for*: polyglot, low-latency, and high-throughput point-to-point microservice invocation.
 
-- **Apache Dubbo** [![GitHub stars](https://img.shields.io/github/stars/apache/dubbo?style=social&color=white)](https://github.com/apache/dubbo/stargazers)  
+- **Apache Dubbo** [![GitHub_Stars](https://img.shields.io/github/stars/apache/dubbo?style=social&color=white)](https://github.com/apache/dubbo/stargazers)  
   ☕ **High-performance, enterprise RPC and microservices framework** (Apache-2.0).  
   Provides rich built-in distributed application runtime capabilities including service registration & discovery, dynamic traffic routing, load balancing, multi-protocol communication (Triple/gRPC/REST), and service governance across large-scale enterprise deployments.  
   *Best for*: enterprise-scale microservice governance and cross-language RPC runtimes.
 
-- **Istio** [![GitHub stars](https://img.shields.io/github/stars/istio/istio?style=social&color=white)](https://github.com/istio/istio/stargazers)  
+- **Istio** [![GitHub_Stars](https://img.shields.io/github/stars/istio/istio?style=social&color=white)](https://github.com/istio/istio/stargazers)  
   ⛵ **The most widely adopted service mesh** (Apache-2.0) — **the enterprise standard**.  
   Features **Ambient mode** (sidecar-less) with **ztunnel** for L4 mutual TLS and **waypoint proxies** for L7. Istio provides **zone-aware load balancing**, **mesh-wide default traffic policies**, **dynamic forward proxy**, **FIPS 140-3 compliance policies**, and **weighted waypoint canaries**.  
   *Best for*: comprehensive traffic management, zero-trust security policies, and enterprise observability at scale.
 
-- **Consul** [![GitHub stars](https://img.shields.io/github/stars/hashicorp/consul?style=social&color=white)](https://github.com/hashicorp/consul/stargazers)  
+- **Consul** [![GitHub_Stars](https://img.shields.io/github/stars/hashicorp/consul?style=social&color=white)](https://github.com/hashicorp/consul/stargazers)  
   🔍 **Service networking and service discovery platform** (BUSL-1.1).  
   Provides multi-cloud service discovery, distributed configuration key-value storage, and full-featured service mesh. Supports multi-port service mesh, external CA integration, global RPC rate limiting, and API gateway capabilities across heterogeneous Kubernetes and VM workloads.  
   *Best for*: teams already using Consul for service discovery who want to extend into mesh capabilities.
 
-- **Envoy** [![GitHub stars](https://img.shields.io/github/stars/envoyproxy/envoy?style=social&color=white)](https://github.com/envoyproxy/envoy/stargazers)  
+- **Envoy** [![GitHub_Stars](https://img.shields.io/github/stars/envoyproxy/envoy?style=social&color=white)](https://github.com/envoyproxy/envoy/stargazers)  
   🛡️ **Cloud-native high-performance edge/middle/service proxy** (Apache-2.0).  
   **The universal data plane standard** beneath Istio, Kuma, and modern commercial meshes. Offers dynamic configuration via xDS APIs, robust L7 filters, resilience primitives (circuit breaking, retries, rate limiting), and deep observability.  
   *Best for*: building custom service meshes or programmable data plane proxies.
 
-- **Dapr** [![GitHub stars](https://img.shields.io/github/stars/dapr/dapr?style=social&color=white)](https://github.com/dapr/dapr/stargazers)  
+- **Dapr** [![GitHub_Stars](https://img.shields.io/github/stars/dapr/dapr?style=social&color=white)](https://github.com/dapr/dapr/stargazers)  
   🧩 **Distributed Application Runtime for building microservices** (Apache-2.0) — **the building-block standard**.  
   **Portable, event-driven runtime** that codifies best practices into open APIs called **building blocks**: **service-to-service invocation** (retries, mTLS), **publish/subscribe** (at-least-once delivery, consumer groups), **state management** (pluggable stores), **workflows** (long-running processes), **actors**, **secrets**, **configuration**, **distributed lock**, **cryptography**, **jobs**, and **conversation** (LLM abstraction). Language-agnostic runtime working on any Kubernetes cluster, VM, or edge environment.  
   *Best for*: abstracting away infrastructure complexity without adopting a full service mesh.
 
-- **Cilium** [![GitHub stars](https://img.shields.io/github/stars/cilium/cilium?style=social&color=white)](https://github.com/cilium/cilium/stargazers)  
+- **Cilium** [![GitHub_Stars](https://img.shields.io/github/stars/cilium/cilium?style=social&color=white)](https://github.com/cilium/cilium/stargazers)  
   🐝 **eBPF-based Networking, Observability, and Service Mesh** (Apache-2.0).  
   Replaces traditional iptables and sidecars with Linux kernel-level eBPF programs, offering sidecar-free service mesh (mutual TLS, L7 traffic management, tracing) with ultra-low latency and minimal compute overhead.  
   *Best for*: high-performance cloud-native networking, sidecar-free mesh, and deep kernel-level security observability.
 
-- **Temporal** [![GitHub stars](https://img.shields.io/github/stars/temporalio/temporal?style=social&color=white)](https://github.com/temporalio/temporal/stargazers)  
+- **Temporal** [![GitHub_Stars](https://img.shields.io/github/stars/temporalio/temporal?style=social&color=white)](https://github.com/temporalio/temporal/stargazers)  
   ⏳ **Open-source durable execution platform** (MIT).  
   Provides a distributed orchestration and workflow runtime that ensures application code runs reliably despite network failures, process crashes, or infrastructure outages. Offers SDKs in Go, Java, TypeScript, Python, and .NET.  
   *Best for*: mission-critical distributed workflows, reliable saga patterns, financial transactions, and stateful application orchestration.
 
-- **Linkerd** [![GitHub stars](https://img.shields.io/github/stars/linkerd/linkerd2?style=social&color=white)](https://github.com/linkerd/linkerd2/stargazers)  
+- **Linkerd** [![GitHub_Stars](https://img.shields.io/github/stars/linkerd/linkerd2?style=social&color=white)](https://github.com/linkerd/linkerd2/stargazers)  
   🔗 **The simplicity-focused service mesh** (Apache-2.0) — **the operational simplicity choice**.  
   Built on ultra-light Rust microproxies (`linkerd2-proxy`). Provides automatic mTLS, rate-limit-aware load balancing, low-overhead L7 metrics, and native Kubernetes integration without complex configuration.  
   *Best for*: teams wanting full service mesh benefits with minimal operational overhead.
 
-- **Kuma** [![GitHub stars](https://img.shields.io/github/stars/kumahq/kuma?style=social&color=white)](https://github.com/kumahq/kuma/stargazers)  
+- **Kuma** [![GitHub_Stars](https://img.shields.io/github/stars/kumahq/kuma?style=social&color=white)](https://github.com/kumahq/kuma/stargazers)  
   🐻 **The universal service mesh** (Apache-2.0) — **the multi-zone, multi-cloud choice**.  
   Built on Envoy with first-class support for both Kubernetes and VM environments. Provides multi-zone federation, policy-driven traffic routing, mTLS, and zero-trust security with a single unified control plane.  
   *Best for*: CNCF-backed mesh deployments that span hybrid Kubernetes and bare-metal/VM workloads.
 
-- **Contour** [![GitHub stars](https://img.shields.io/github/stars/projectcontour/contour?style=social&color=white)](https://github.com/projectcontour/contour/stargazers)  
+- **Contour** [![GitHub_Stars](https://img.shields.io/github/stars/projectcontour/contour?style=social&color=white)](https://github.com/projectcontour/contour/stargazers)  
   🚦 **Kubernetes ingress controller using Envoy proxy** (Apache-2.0).  
   Provides a dynamic reverse proxy and ingress control plane using the `HTTPProxy` custom resource definition to support multi-team ingress delegation, canary rollouts, and load balancing.  
   *Best for*: Kubernetes north-south ingress and edge traffic management powered by Envoy.
 
-- **Kiali** [![GitHub stars](https://img.shields.io/github/stars/kiali/kiali?style=social&color=white)](https://github.com/kiali/kiali/stargazers)  
+- **Kiali** [![GitHub_Stars](https://img.shields.io/github/stars/kiali/kiali?style=social&color=white)](https://github.com/kiali/kiali/stargazers)  
   🔭 **Observability and service mesh management console for Istio** (Apache-2.0).  
   Provides live topology visualization, health status, metrics correlation, and automated configuration verification for Istio service mesh deployments.  
   *Best for*: interactive service topology graphing, traffic troubleshooting, and Istio configuration validation.
 
-- **Traefik Mesh** [![GitHub stars](https://img.shields.io/github/stars/traefik/mesh?style=social&color=white)](https://github.com/traefik/mesh/stargazers)  
+- **Traefik Mesh** [![GitHub_Stars](https://img.shields.io/github/stars/traefik/mesh?style=social&color=white)](https://github.com/traefik/mesh/stargazers)  
   🪶 **Lightweight service mesh** (Apache-2.0) — **the simple alternative**.  
   Built on Traefik Proxy. Uses a per-node proxy model rather than sidecars per pod, minimizing resource footprint for smaller Kubernetes clusters.  
   *Best for*: teams wanting basic service mesh functionality with minimal resource overhead.
@@ -152,7 +152,7 @@ For modern resilient cloud architectures, practitioners combine these layers int
 Contributions are welcome and highly appreciated! To contribute:
 
 1. 🍴 **Fork the repo**.
-2. 📝 **Add or edit entries** in `README.md` (ensure new open-source projects include their star badges and are placed in correct star-descending order).
+2. 📝 **Add or edit entries** in `README.md` (ensure new open-source projects include their Stars_Badges and are placed in correct star-descending order).
 3. 🏷️ **Include key attributes**: name, link, concise description, license, and pricing details if SaaS.
 4. 🚀 **Submit a Pull Request** with a descriptive summary of your additions.
 
